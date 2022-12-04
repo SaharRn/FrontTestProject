@@ -1,0 +1,793 @@
+/* start header section */
+.header {
+    display: flex;
+
+    .nav {
+        display: flex;
+        margin: 79px 170px 0 170px;
+        justify-content: space-between;
+        width: 100%;
+
+        &__left {
+
+            display: flex;
+            align-items: center;
+
+            .nav__list {
+                display: flex;
+                list-style: none;
+            }
+
+            .nav__list-item {
+                margin-right: 20px;
+                text-decoration: none;
+
+                .nav__list-link {
+                    font-family: $font-Gilroy;
+                    font-size: 12px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: $color-Grey;
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        &__right {
+
+            .nav__fill-btn {
+                @extend %fill-btn;
+                width: 112px;
+                height: 36px;
+                margin-left: 20px;
+            }
+
+            .nav__border-btn {
+                @extend %border-btn;
+                height: 36px;
+                width: 112px;
+            }
+        }
+
+    }
+}
+
+/* end header section */
+
+
+/* start demo section */
+.demo {
+    display: flex;
+    margin: 135px 170px 0 170px;
+    width: 531px;
+
+    &__tittle {
+        @include tittle($font-Inter);
+        line-height: 50px;
+        height: 150px;
+        width: 42.476vw;
+
+
+    }
+
+    &__discrption {
+        @include discrption($font-Gilroy);
+        margin: 19px 0 40px 0;
+        height: 44px;
+        width: 29.564vw;
+
+    }
+
+    &__fill-btn {
+        @extend %fill-btn;
+        height: 46px;
+        width: 157px;
+    }
+
+    &__border-btn {
+        @extend %border-btn;
+        margin-left: 20px;
+        height: 46px;
+        width: 157px;
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+
+        .video-txt {
+            margin-left: 20px;
+        }
+
+        .video__discrption-1 {
+            @include discrption($font-Rubik, 400, 16px);
+            height: 44px;
+            width: 380px;
+            line-height: 22px;
+        }
+
+        .video__discrption-2 {
+            @include discrption($font-Rubik, 400, 14px);
+            color: $color-DarkGrey;
+            line-height: 22px;
+
+        }
+    }
+
+    &__img {
+        .GuyVectorBg {
+            position: absolute;
+            margin-top: -27px;
+            right: 0;
+        }
+
+        .GuyVector {
+            position: absolute;
+            top: 209px;
+            right: 85.7px
+        }
+    }
+}
+
+// end demo section
+
+
+/* start brand section */
+.brand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 105px 37px 100px;
+    opacity: 0.2;
+    gap: 100px;
+
+    &__img {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    &__rightBg {
+        @extend %rightBg;
+        opacity: 0.1;
+        margin-top: -5%;
+    }
+
+    &__leftBg {
+        @extend %leftBg;
+        opacity: 0.1;
+        margin-top: -5%;
+
+    }
+}
+
+/* end brand section */
+
+/* start choice section */
+.choice {
+    @include center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 221px 0 222px;
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 42px);
+        margin-bottom: 13px;
+    }
+
+    &__discrption {
+        @include discrption($font-Gilroy, unset, 16px);
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+
+    &__content {
+        @include content(space-between);
+
+        .contents {
+            @include contents;
+            align-items: flex-start;
+            width: 299px;
+            height: 106px;
+
+
+            &__icon {
+                align-items: flex-start;
+                margin-right: 20px;
+                width: 24px;
+                height: 24px;
+            }
+
+            &__tittle {
+                @include tittle($font-Gilroy, unset, 18px);
+                margin-bottom: 10px;
+            }
+
+            &__discrption {
+                @include discrption($font-Gilroy, unset, 14px);
+                text-align: start;
+                margin-left: 50px;
+
+            }
+        }
+    }
+
+}
+
+/* end choice section */
+
+/* start contactUs section */
+
+.contactUs {
+    display: flex;
+    margin: 150px 130px 0 250px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__txt {
+        height: 279px;
+        width: 29.69vw;
+    }
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 42px);
+    }
+
+    &__span {
+        @extend %span;
+    }
+
+    &__discrption {
+        @include discrption($font-Gilroy, unset, 16px);
+        margin: 32px 0 43px 0;
+    }
+
+    &__fill-btn {
+        @extend %fill-btn;
+        box-shadow: -11.09px 18.13px 36.6483px rgba($color-btnshadow, 0.23);
+        height: 48px;
+        width: 155px;
+
+    }
+
+    &__imgs {
+        position: relative;
+        width: 27.838vw;
+        height: 399.56px;
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+
+    &__img-1 {
+        z-index: 200;
+        bottom: -5px;
+        right: 105px;
+    }
+
+    &__img-2 {
+        z-index: 300;
+    }
+
+    &__img-3 {
+        z-index: 400;
+        top: 20px;
+        left: -105px;
+    }
+
+
+    &__increase__icon {
+        @extend %increase__icon;
+        top: 79%;
+        left: 8%;
+    }
+
+
+}
+
+/* end contactUs section */
+
+
+/* start SaveBunch section */
+
+.SaveBunch {
+    @include center;
+    align-items: unset;
+    flex-direction: column;
+    text-align: center;
+    margin: 217px 0 169px 0;
+
+
+    &__leftBg {
+        @extend %leftBg;
+        margin-top: -10%;
+    }
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 36px);
+    }
+
+    &__span {
+        @extend %span;
+    }
+
+    &__discrption {
+        @include center;
+        @include discrption($font-Gilroy, unset, 15px);
+        justify-content: center;
+        letter-spacing: 0.2px;
+        margin: 32px 0 45px;
+
+    }
+
+    &__content {
+        @include content (space-evenly);
+    }
+
+    .contents {
+        @include contents;
+        width: 291px;
+        height: 118px;
+
+        &__tittle {
+            @include tittle($font-Inter, 700, 36px);
+            margin-bottom: 10px;
+            letter-spacing: 0.33px;
+        }
+
+        &__discrption {
+            @include discrption($font-Gilroy, unset, 15px);
+            margin-left: unset;
+            letter-spacing: 0.2px;
+        }
+    }
+
+
+}
+
+/* end  SaveBunch section*/
+
+/* start NewProject section */
+.NewProject {
+    @include center;
+    position: relative;
+    height: 492px;
+    margin-top: 169px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+
+
+
+    &__Bg {
+        position: absolute;
+        width: 100%;
+        top: 13%;
+        opacity: 0.8;
+
+    }
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 42px);
+        text-align: center;
+        margin-bottom: 46px;
+        width: 770px;
+
+
+    }
+
+    &__span {
+        @extend %span;
+
+    }
+
+    &__fill-btn {
+        @extend %fill-btn;
+        box-shadow: -11.09px 18.13px 36.6483px rgba($color-btnshadow, 0.23);
+        height: 54px;
+        width: 164px;
+    }
+}
+
+/* end  NewProject section*/
+
+
+/* start NewProject section */
+.BetterBusiness {
+    display: flex;
+    height: 700px;
+    margin: 143px 130px 0 250px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        height: 316px;
+        width: 470px;
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 42px);
+        margin-bottom: 32px;
+
+    }
+
+    &__span {
+        @extend %span;
+    }
+
+    &__discrption {
+        @include discrption($font-Gilroy, unset, 15px);
+        letter-spacing: 0.5px;
+        margin-bottom: 46px;
+    }
+
+    &__fill-btn {
+        @extend %fill-btn;
+        box-shadow: -11.09px 18.13px 36.6483px rgba($color-btnshadow, 0.23);
+        height: 54px;
+        width: 155px;
+    }
+
+    &__Bg {
+        @extend %rightBg;
+        opacity: 0.8;
+        margin-top: 19%;
+    }
+
+
+    .increase__icon {
+        @extend %increase__icon;
+        top: 22%;
+        right: 138%;
+    }
+
+    .increase__txt {
+        @extend %increase__txt;
+        flex-direction: column;
+        top: 60%;
+        left: 39%;
+
+        .increase__tittle {
+            @include tittle($font-Montserrat, 600, 16px);
+            color: $color-white;
+
+        }
+
+        .increase__discrption {
+            @include discrption($font-OpenSans, 500, 10px);
+            letter-spacing: 0.5px;
+            color: $color-white;
+            opacity: 0.8;
+        }
+
+    }
+}
+
+/* end  NewProject section*/
+
+/* start  OnlineInfo section*/
+
+.OnlineInfo {
+    display: flex;
+    margin: 51px 160px 0 189px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+
+
+    &__imgs {
+        position: relative;
+        width: 494.07px;
+        height: 446px;
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 300;
+    }
+
+    &__rightBg {
+        position: absolute;
+        opacity: 0.8;
+        right: 0;
+        margin-top: -3%;
+    }
+
+
+    &__img-1 {
+        z-index: 900;
+    }
+
+    &__img-2 {
+        top: -6%;
+        left: -7%;
+    }
+
+    &__img-3 {
+        top: 48%;
+        left: 71%;
+    }
+
+    &__img-4 {
+        top: 46%;
+        left: -17%;
+    }
+
+
+    &__txt {
+        width: 512px;
+        height: 290px;
+    }
+
+    &__tittle {
+        @include tittle($font-Inter, 700, 26px);
+        letter-spacing: 0.325px;
+        margin-bottom: 32px;
+    }
+
+    &__discrption {
+        @include discrption($font-Gilroy, unset, 15px);
+        letter-spacing: 0.2px;
+        margin-bottom: 66px;
+        width: 414px;
+
+
+
+    }
+
+    &__content {
+        @include content(space-between);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 321px;
+        height: 138px;
+
+        .contents {
+            @include contents;
+            align-items: flex-start;
+            width: 299px;
+            height: 106px;
+
+
+            &__icon {
+                align-items: flex-start;
+                margin-bottom: 20.5px;
+                width: 24px;
+                height: 24px;
+            }
+
+            &__tittle {
+                @include tittle($font-Gilroy, unset, 18px);
+                margin-bottom: 8px;
+            }
+
+            &__discrption {
+                @include discrption($font-Gilroy, unset, 14px);
+                text-align: start;
+                height: 60px;
+                width: 224px;
+
+            }
+        }
+    }
+
+}
+
+/* end  OnlineInfo section*/
+
+
+/* start  SendEmail section*/
+
+
+.SendEmail {
+    @include center;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        margin-top: 147px;
+
+    }
+
+    &__card {
+        @include center;
+        flex-direction: column;
+        justify-content: normal;
+        height: 324px;
+        width: 940px;
+        background: $color-EmailCard;
+        backdrop-filter: blur(67px);
+        border-radius: 5px;
+        margin: 196px 0 185px 0;
+
+    }
+
+
+    &__tittle {
+        @include tittle($font-Rubik, 600, 36px);
+        color: $color-Orange;
+        text-align: center;
+        margin: 50px 155px 20px 156px;
+
+    }
+
+
+
+    &__discrption-1 {
+        @include discrption($font-Rubik, 500, 16px);
+        text-align: center;
+        color: $color-purple;
+        height: 44px;
+        width: 380px;
+    }
+
+    &__discrption-2 {
+        @include discrption($font-Gilroy, unset, 14px);
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+
+    &__lbl {
+        width: 416px;
+        border-radius: 0px;
+        display: flex;
+        margin: 23px 0 16px 0;
+
+    }
+
+
+    &__input {
+        @include tittle($font-Inter, 400, 14px);
+        position: relative;
+        height: 56px;
+        width: 308px;
+        background: $color-LightBlue;
+        border: none;
+        border-radius: 5px;
+        letter-spacing: 0.2px;
+        left: 2%;
+        opacity: 0.2;
+        padding: 16px;
+        color: $color-white;
+
+
+    }
+
+    &__btn {
+        @include discrption($font-Rubik, 500, 12px);
+        @extend %fill-btn;
+        height: 56px;
+        width: 128px;
+        border-radius: 0px 5px 5px 0px;
+        z-index: 200;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+        box-shadow: unset;
+
+
+    }
+}
+
+
+/* end  SendEmail section*/
+
+
+/* start  Footer section*/
+
+.footer {
+    position: relative;
+    margin: 60px 224px 68px 224px;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    &__Bg {
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        opacity: 0.3;
+
+    }
+
+    .heading__txt {
+        @include tittle($font-Inter, 700, 26px);
+        color: $color-Orange;
+        width: 480px;
+        letter-spacing: 0.325px;
+    }
+
+    &__social {
+        margin-bottom: 94px;
+
+        .social {
+            width: 152px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            &__item {
+                @include center;
+                width: 40px;
+                height: 40px;
+                background: $color-LightBlue;
+                border-radius: 50%;
+
+            }
+
+            &__link {
+                color: $color-white;
+                text-decoration: none;
+
+            }
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+
+    &__title {
+        @include tittle($font-Inter, 600, 15px);
+        height: 18px;
+        letter-spacing: 0.2px;
+        color: $color-white;
+        margin-bottom: 25px;
+    }
+
+
+    &__item {
+        margin: 16px 0;
+        list-style: none;
+    }
+
+
+    &__link {
+        @include tittle($font-Inter, 300, 15px);
+        letter-spacing: 0.2px;
+        color: $color-white;
+        text-decoration: none;
+
+    }
+
+    &__footer {
+        @include center;
+
+
+
+    }
+
+    &__txt {
+        @include tittle($font-Inter, 400, 14px);
+        color: $color-Darkwhite;
+        padding: 0 34px;
+        letter-spacing: 0.2px;
+    }
+}
+
+/* end  Footer section*/

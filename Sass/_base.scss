@@ -1,0 +1,178 @@
+$color-body: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 50.5%);
+$color-DarkBlue: #0F1145;
+$color-LightBlue: #1d2551;
+$color-Orange : #F2994A;
+$color-Grape :#8476AA;
+$color-LightPurple: #516EA9;
+$color-purple: #95A1BB;
+$color-NightGreen : #99EFD0;
+$color-DarkNightGreen: #13C296;
+$color-Grey : #B5B5B5;
+$color-DarkGrey: #6D6D78;
+$color-LightGry: #637381;
+$color-MediumGrey: #98A4AF;
+$color-border: #D6DBDF;
+$color-Dark: #212B36;
+$color-white: #FFFFFF;
+$color-Darkwhite: #8D8D8D;
+$color-inputwhite: #F6F6F6;
+$color-btnshadow: #F2994A21;
+$color-increaseshadow: #13C296;
+$color-ncreaseTxtshadow: #52728B;
+$color-EmailCard: #3C3E7D30;
+
+
+
+
+
+
+$font-Gilroy: 'Gilroy',
+sans-serif;
+$font-Inter: 'Inter',
+sans-serif;
+$font-Rubik: 'Rubik',
+sans-serif;
+$font-Montserrat: 'Montserrat',
+sans-serif;
+$font-OpenSans: 'OpenSans',
+sans-serif;
+
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    src: url('../Fonts/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../Fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../Fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../Fonts/Gilroy-Semibold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    src: url('../fonts/rubik-v21-latin-regular.eot');
+    src: local(''),
+        url('../fonts/rubik-v21-latin-regular.eot') format('embedded-opentype'),
+        url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'),
+        url('../fonts/rubik-v21-latin-regular.woff') format('woff'),
+        url('../fonts/rubik-v21-latin-regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    src: url('../fontsinter-v12-latin-regular.eot');
+    src: local(''),
+        url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        url('../fonts/inter-v12-latin-regular.woff') format('woff'),
+        url('../fonts/inter-v12-latin-regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/Montserrat-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('ttf');
+}
+
+@mixin btn($BorderRadius) {
+    border-radius: $BorderRadius;
+}
+
+
+@mixin TxtBtn {
+    font-family: $font-Rubik;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+%fill-btn {
+    @include btn(3px);
+    @include TxtBtn();
+    background-color: $color-Orange;
+    color: $color-white;
+    box-shadow: -11.09px 18.13px 36.6483px rgba($color-btnshadow, 0.13);
+    border: none;
+}
+
+%border-btn {
+    @include btn(4px);
+    @include TxtBtn();
+    background-color: transparent;
+    border: 1px solid $color-Orange;
+    color: $color-Orange;
+}
+
+@mixin tittle($fontFamily: $font-Inter, $fontWeight: 700, $fontSize: 44px) {
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    font-style: normal;
+    color: $color-NightGreen;
+}
+
+
+@mixin discrption($fontfamily: $font-Gilroy, $fontWeight: 400, $fontSize: 18px) {
+    font-family: $fontfamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    font-style: normal;
+    color: $color-Grape;
+
+}
+
+@mixin content ($justifycontent) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justifycontent;
+}
+
+@mixin contents {
+    display: flex;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
+
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: $color-body;
+}

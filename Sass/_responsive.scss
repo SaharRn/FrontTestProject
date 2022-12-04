@@ -1,0 +1,533 @@
+@media (max-width: 1388px) {
+    .demo {
+        margin: 135px 170px 0 100px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .choice__content {
+        justify-content: space-around;
+    }
+
+    .demo {
+        margin: 135px 0 0 80px;
+    }
+
+
+    .contactUs {
+        margin: 100px 100px 0 150px;
+    }
+
+    .SaveBunch {
+        margin: 190px 0 -2px 0;
+    }
+
+    .NewProject {
+        margin-top: 140px;
+    }
+
+    .BetterBusiness {
+        margin: 0 100px 0 200px;
+    }
+
+    .OnlineInfo {
+        margin: 0px 160px 0 189px;
+    }
+
+    .SendEmail__card {
+        margin: 145px 0 140px 0;
+    }
+
+
+
+
+}
+
+@media (max-width: 1289px) {
+    .demo {
+        &__img {
+            opacity: 0.2;
+        }
+
+        margin: 135px 170px 0 170px;
+
+        &__tittle {
+            width: unset;
+            text-align: center;
+        }
+
+        &__discrption {
+            width: unset;
+            text-align: center;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__video {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .contactUs {
+        margin: 100px 60px 0 115px;
+    }
+}
+
+@media (max-width: 1150px) {
+
+
+    .BetterBusiness {
+        margin: 0 50px 0 80px;
+    }
+
+
+    .NewProject {
+        height: 450px;
+    }
+
+    .OnlineInfo {
+        margin: 0px 20px 0 100px;
+
+        &__discrption {
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            flex-wrap: wrap;
+
+
+            .contents {
+                margin-bottom: 20px;
+
+                &__icon {
+                    margin-bottom: 5px;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media (max-width:1020px) {
+    .header .nav {
+        margin: 79px 70px 0 70px;
+
+
+        .nav__right {
+            display: flex;
+        }
+
+    }
+
+    .demo {
+        display: flex;
+        width: auto;
+    }
+
+    .BetterBusiness {
+        margin: 0px 0px 0 75px;
+    }
+
+    .choice {
+        margin: unset;
+    }
+
+    .SendEmail {
+        &__bg {
+
+            margin-top: 70px;
+        }
+
+        &__card {
+            margin: 145px 0 70px 0;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .demo__img {
+        display: none;
+    }
+
+    .choice {
+        padding: 10px;
+    }
+
+    .contactUs {
+        &__txt {
+            height: unset;
+            width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__tittle {
+            font-size: 32px;
+        }
+
+        &__imgs {
+            display: none;
+        }
+    }
+
+
+    .BetterBusiness {
+        margin: 0px 50px 120px 50px;
+        display: flex;
+        flex-direction: column;
+
+        &__left {
+            height: 316px;
+            width: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .increase__icon {
+            right: 80%;
+        }
+
+        .increase__txt {
+            left: 95%;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    .card {
+        right: unset;
+    }
+
+
+    .OnlineInfo {
+        flex-wrap: wrap;
+
+        &__content {
+            flex-wrap: nowrap;
+
+        }
+
+        &__imgs {
+            order: 1;
+        }
+
+    }
+
+    // .SendEmail__card {
+    //     height: 360px;
+
+    // }
+
+    .footer {
+        margin: 35px 25px 45px 25px;
+
+        &__content {
+            justify-content: space-around;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            column-gap: 27px;
+            row-gap: 36px;
+        }
+
+        &__footer {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__txt {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    // .header {
+
+    //     .nav {
+    //         margin: 40px 50px 0 50px;
+    //         display: flex;
+    //         flex-wrap: nowrap;
+
+    //         &__left {
+    //             margin-bottom: 20px;
+
+    //         }
+
+    //         &__right {
+
+    //             .nav__fill-btn {
+    //                 width: 80px;
+    //                 margin-left: unset;
+    //             }
+
+    //             .nav__border-btn {
+    //                 width: 80px;
+    //             }
+
+    //         }
+
+    //     }
+    // }
+    .header {
+        .nav {
+            margin: 40px 10px 0 10px;
+
+            &__left {
+                .nav__list-item {
+                    margin-right: 10px;
+                }
+            }
+
+            &__right {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    .logo {
+        margin-right: 5px;
+    }
+
+    .demo {
+        margin: 110px 20px 0;
+    }
+
+
+    .SaveBunch__leftBg {
+        opacity: 0.4;
+    }
+
+    .BetterBusiness__Bg {
+        opacity: 0.4;
+    }
+
+    .OnlineInfo__rightBg {
+        opacity: 0.4;
+
+    }
+
+    .NewProject__tittle {
+        font-size: 32px;
+        margin-bottom: 36px;
+        width: unset;
+        padding: 2px;
+
+    }
+
+
+    .BetterBusiness {
+
+        &__discrption {
+            margin-bottom: 36px;
+        }
+
+        &__fill-btn {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .header {
+
+        .nav {
+            margin: 40px 10px 0 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+
+        .nav__left {
+            margin-bottom: 40px;
+        }
+    }
+
+    .demo {
+        &__tittle {
+            font-size: 34px;
+            height: auto;
+        }
+    }
+
+    .brand {
+
+        &__rightBg,
+        &__leftBg {
+            display: none;
+        }
+    }
+
+    .choice {
+        &__tittle {
+            font-size: 32px;
+        }
+    }
+
+
+    .SaveBunch__tittle {
+
+        font-size: 26px;
+
+    }
+
+
+    .OnlineInfo__content .contents {
+        width: unset;
+    }
+
+
+}
+
+@media (max-width: 490px) {
+
+
+    .demo {
+        margin: 85px 0 0;
+
+        &__txt {
+            width: 100vw;
+        }
+
+        &__tittle {
+            font-size: 30px;
+            padding: 0px 10px;
+        }
+
+        &__video {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+    }
+
+
+    .brand {
+        gap: 50px;
+    }
+
+    .demo__video .video-txt {
+        margin-left: unset;
+    }
+
+    .contactUs {
+        margin: 50px 15px 0 15px;
+    }
+
+    .SaveBunch {
+
+        margin: 100px 0 -2px 0;
+
+        &__leftBg {
+            display: none;
+        }
+
+    }
+
+
+
+    .BetterBusiness {
+        margin-top: -120px;
+
+        &__Bg {
+            display: none;
+        }
+
+        &__tittle {
+
+            font-size: 30px;
+        }
+
+        .increase__icon,
+        .contactUs__increase__icon {
+            height: 60px;
+            width: 79px;
+
+        }
+
+        .increase__txt {
+            height: 55px;
+            width: 110px;
+            z-index: 1;
+            top: 65%;
+            left: 73%;
+
+        }
+    }
+
+
+    .OnlineInfo {
+        width: 100vw;
+        text-align: center;
+        margin: 0 0 100px 0;
+
+        &__rightBg {
+            display: none;
+        }
+
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        &__discrption {
+
+            width: 100vw;
+
+        }
+
+        &__imgs {
+            display: none;
+        }
+
+    }
+
+    .SendEmail {
+        &__bg {
+            display: none;
+        }
+
+        &__tittle {
+            font-size: 25px;
+            margin: 50px 15px 20px 15px;
+        }
+
+        &__discrption-1 {
+            font-size: 14px;
+        }
+
+        &__lbl {
+            width: 90vw;
+        }
+    }
+}

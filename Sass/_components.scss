@@ -1,0 +1,119 @@
+.logo {
+    margin-right: 45px;
+    width: 36px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+}
+
+
+%span {
+    color: $color-Orange;
+}
+
+%increase__icon {
+    @include center;
+    position: absolute;
+    height: 80px;
+    width: 89px;
+    border-radius: 8px;
+    background: $color-DarkNightGreen;
+    box-shadow: -16.0895px 24.1342px 36.6483px rgba($color-increaseshadow, 0.24);
+    z-index: 999;
+
+}
+
+%increase__txt {
+    @include center;
+    position: absolute;
+    height: 65px;
+    width: 130px;
+    border-radius: 10px;
+    background: $color-LightPurple;
+    box-shadow: -8px 16px 60px rgba($color-ncreaseTxtshadow, 0.24);
+}
+
+.card {
+    position: relative;
+    background-color: $color-white;
+    border-radius: 10px;
+    box-shadow: -8px 16px 60px 0px rgba(82, 114, 139, 0.24);
+    height: 414px;
+    width: 260px;
+    right: 55%;
+    z-index: 1;
+
+    &__body {
+        padding: 20px 30px;
+    }
+
+    &__txt {
+        padding-bottom: 22px;
+
+        .card__tittle-main {
+            @include tittle($font-Montserrat, 600, 16px);
+            color: $color-Dark;
+        }
+
+        .card__discrption-main {
+            @include discrption($font-OpenSans, 400, 10px);
+            letter-spacing: 0.5px;
+            color: $color-LightGry;
+        }
+
+    }
+
+    &__info {
+        .info__tittle-secondary {
+            @include tittle($font-Montserrat, 400, 24px);
+            color: $color-DarkNightGreen;
+        }
+
+        .info__discrption-secondary {
+            @include discrption($font-OpenSans, 600, 10px);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: $color-MediumGrey;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid $color-border;
+        font-size: 0.9rem;
+        padding: 16px 0 8px 0;
+        margin: 0 30.5px;
+    }
+
+    &__content {
+        @include content (space-between);
+
+        .contents {
+            @include contents;
+
+            &__tittle {
+                @include tittle($font-Montserrat, 600, 14px);
+                color: $color-Dark;
+
+            }
+
+            &__discrption {
+                @include discrption($font-OpenSans, 400, 10px);
+                letter-spacing: 0.5px;
+                color: $color-LightGry;
+            }
+        }
+
+    }
+
+}
+
+
+%rightBg {
+    position: absolute;
+    right: 0;
+}
+
+%leftBg {
+    position: absolute;
+    left: 0;
+}
